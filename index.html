@@ -5,8 +5,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
       :root {
-        /* --primary-color: rgb(255, 87, 64); */
-        --primary-color: #ff3d58;
+        --primary-color: #ff5d3b;
+        --secondary-color: #ff494d;
+        --accent-color: #ff2d65;
+        --accent-secondary-color: #ff3d58;
         --contrast-color: #fff;
       }
       * {
@@ -62,15 +64,15 @@
       .chekboxContainer label::before {
         width: 1.1em;
         height: 1.1em;
-        border: 2px solid var(--primary-color);
-        border: 2px solid #ff3d58;
+        border: 2px solid var(--secondary-color);
+        border: 2px solid #ff494d;
         border-radius: 0.25em;
         cursor: pointer;
         transition: background 0.3s;
       }
       .chekboxContainer input[type="checkbox"]:checked + label::before {
-        background-color: var(--primary-color);
-        background-color: #ff3d58;
+        background-color: var(--secondary-color);
+        background-color: #ff494d;
       }
       .chekboxContainer input[type="checkbox"]:checked + label::after {
         transform: translate(0.25em, 0.3365384615em) rotate(-45deg);
@@ -114,7 +116,7 @@
         height: 16px;
         background-color: transparent;
         border: 2px solid var(--primary-color);
-        border: 2px solid #ff3d58;
+        border: 2px solid #ff5d3b;
         border-radius: 14px;
         z-index: 1;
         transition: border-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
@@ -130,7 +132,7 @@
       }
       .radioContainer .radio:checked + label::before {
         background-color: var(--primary-color);
-        background-color: #ff3d58;
+        background-color: #ff5d3b;
       }
       .radioContainer .radio:checked + label:after {
         transform: scale(1.1, 1.1);
@@ -142,12 +144,12 @@
       .inputTextContainer .inputText {
         width: 100%;
         border: 0px;
-        border-bottom: 2px solid var(--primary-color);
-        border-bottom: 2px solid #ff3d58;
+        border-bottom: 2px solid var(--accent-color);
+        border-bottom: 2px solid #ff2d65;
         font-size: 16px;
         padding-bottom: 0.5rem;
-        caret-color: var(--primary-color);
-        caret-color: #ff3d58;
+        caret-color: var(--accent-color);
+        caret-color: #ff2d65;
       }
       .inputTextContainer .inputText:focus {
         outline: none;
@@ -167,8 +169,9 @@
         text-transform: uppercase;
         font-weight: 500;
         border-radius: 8px;
-        background-color: var(--primary-color);
-        background-color: #ff3d58;
+        background: linear-gradient(70deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+        background-color: var((--accent-color));
+        background-color: #ff2d65;
         padding-top: 0.7rem;
         padding-bottom: 0.7rem;
         box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
